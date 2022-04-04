@@ -1,24 +1,25 @@
-#include<stdio.h>
-int main(void)
-{
-    float soma(void);
+#include <stdio.h> 
+#include <stdlib.h>
 
-    float resultado = soma();
-    printf("A soma eh: %.2f", resultado);
+int main(void){
 
-    return 0;
+float soma(void);
+float resultado=soma();
+
+printf ("a soma eh= %f", resultado);
+
+return 0;
 }
 
-    float soma()
-    {
-        float num1, num2;
-
-        printf("Digite o primeiro numero: ");
-        scanf("%f", &num1);
-        printf("Digite o segundo numero: ");
-        scanf("%f", &num2);
-
-        float resultado = num1 + num2;
-
-        return resultado;
-    }
+float soma(){
+    
+    float num1,num2;
+    printf("digite o numero um=",num1);
+    scanf("%d",&num1);
+    printf ("digite o numero dois=",num2);
+    scanf("%d",&num2);
+    
+    float resultado= num1+num2;
+    
+    return resultado;
+}
