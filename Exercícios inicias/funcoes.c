@@ -23,11 +23,11 @@ int main (){
 
   int opcao;
   float num1,num2,resultado;
-printf ("calculado\n");
+printf ("calculadora\n");
 printf ("-------------------------------\n");
-printf ("digite o valor do primeiro numero:");
+printf ("digite o valor do primeiro numero:  \n");
 scanf("%f",&num1);
-printf ("digite o valor do segundo numero");
+printf ("digite o valor do segundo numero:  \n");
 scanf("%f",&num2);
 printf ("-------------------------------\n");
 printf("1. Somar\n");
@@ -35,13 +35,13 @@ printf("2. Subtrair\n");
 printf("3. Multiplicar\n");
 printf("4. Dividir\n");  
 printf("5. Porcentagem\n");
-printf("digite a opcao desejada");
+printf("digite a opcao desejada    \n");
 scanf("%d",&opcao);
 
 switch(opcao)
 {
   case 1:
-      resultado = soma(num1,num2);
+      resultado = somar(num1,num2);
       break;
 
   case 2:
@@ -66,14 +66,14 @@ switch(opcao)
   case 5: 
     resultado= porcentagem(num1,num2);
     break;
-default;
+  default:
     printf("opcao invalida");
     break;
     }
 printf ("-------------------------------\n");
-printf("resultado: %.2f\n,resultado";)
-printf("\n";)      
+printf("resultado: %.2f\n",resultado);
+printf("\n");     
 system ("pause");
-
-  return 0;
+return 0;
+  
 }
