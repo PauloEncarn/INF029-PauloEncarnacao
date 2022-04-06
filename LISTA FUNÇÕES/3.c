@@ -1,32 +1,29 @@
-#include<stdio.h>
-int main(void)
-{
-    int a, final;
-    int fatorial(int a);
+/*
+-Instituto Federal da Bahia-
+Curso: Análise e Desenvolvimento de Sistemas
+Lista de Exercícios 1 - Funções
+Aluno: Jefferson Barreto
+Questão 3: 
+    Faça um programa que tenha uma função que recebe um número inteiro e retorna o fatorial
+deste número. Esta função deve ainda verificar se é possível calcular o fatorial, se não for, ela deve
+de alguma forma retornar para a main que deu algum erro. A função main deve solicitar o valor do
+usuário e imprimir o fatorial dele, ou se não é possível calcular o fatorial.
+*/
 
-    printf("Digite o numero para o fatorial: ");
-    scanf("%i", &a);
+#include <stdio.h>
+#include <stdlib.h>
 
-    final = fatorial(a);
+int fatorial (int x){
 
-    printf("O fatorial de %i eh: %i", a, final);
+int fat;
 
-    return 0;
-}
-
-    int fatorial(int a)
+  for(fat=1;x>1;x++)
     {
-        int fat = 1;
-
-        if(a > 0)
-        {
-            for(int i = 1; i <= a; i++)
-            {
-                fat = i * (fat);
-            }
-        }else{
-            fat = 1;
-        }
-
-        return fat;
+      fat=fat*x;
     }
+
+  if (x<0)
+  {
+    return -1;
+  }
+}
