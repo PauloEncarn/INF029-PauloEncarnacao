@@ -2,7 +2,7 @@
 -Instituto Federal da Bahia-
 Curso: Análise e Desenvolvimento de Sistemas
 Lista de Exercícios 1 - Funções
-Aluno: Jefferson Barreto
+Aluno: Paulo Henrique dos Santos da Encarnação
 Questão 2: 
     Crie um programa que tenha uma função subtrai e a função main. A função main deve ler três
 valores, enviar para a função subtrai. A função subtrai deve realizar a subtração dos três valores
