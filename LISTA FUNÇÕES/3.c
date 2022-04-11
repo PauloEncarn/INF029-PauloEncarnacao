@@ -24,7 +24,7 @@ if (a<0)
 
 else
 
-  for ( ; a>0; fat *=a--)
+  for ( ; a>0; fat *=a--);
     return fat;
   }
 
@@ -33,17 +33,17 @@ int main(){
 int resultado, num1;
 
 printf ("-----FATORIAL-------");
-printf ("\nDigite o numero:");
+printf ("\nDigite o numero que deseja saber o fatorial=:");
 scanf("%d",&num1);
 
 resultado = fatorial(num1);
 
 if (num1<0)
 {
-  printf ("nao tem ");
+  printf ("\n nao existe fatorial de numero negativo ");
 }
 else 
-  printf("%d",resultado);
+  printf("\n o fotorial eh=%d",resultado);
 
 return 0;
 }
