@@ -11,20 +11,22 @@
 //  O aluno deve preencher seus dados abaixo, e implementar as questões do trabalho
 
 //  ----- Dados do Aluno -----
-//  Nome: Paulo Henrique dos santos da Encarnação  
-//  email: phdsde2@gmail.com
-//  Matrícula: 20212160035
-//  Semestre: 2º
+//  Nome:Paulo Henrique dos Santos da Encarnação  
+//  email:phdsde2@gmail.com
+//  Matrícula:20212160035
+//  Semestre:2º
 
 //  Copyright © 2016 Renato Novais. All rights reserved.
-// Última atualização: 20/06/2018 - 19/08/2016
+// Última atualização: 07/05/2021 - 19/08/2016
+
+// #################################################
 
 // #################################################
 
 #include <stdio.h> 
 #include <string.h>
 #include <stdlib.h>
-#include "aluno.h"
+#include "pauloencarnacao20212160035.h"
 
 /*
  Q1 = validar data
@@ -313,5 +315,19 @@ int q6(int numerobase, int numerobusca){
 			}
 		}
 	}
+    return qtdOcorrencias;
+}
+ Q6 = ocorrência de um número em outro
+ @objetivo
+    Verificar quantidade de vezes da ocorrência de um número em outro
+ @entrada
+    Um número base (numerobase) e um número de busca (numerobusca).
+ @saida
+    Quantidade de vezes que número de busca ocorre em número base
+ */
+
+int q6(int numerobase, int numerobusca)
+{
+    int qtdOcorrencias;
     return qtdOcorrencias;
 }
